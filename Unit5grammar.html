@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+  
+
+  <div class="container">
+      <section id="p0">
+        <h1 class="heading">Practices</h1>
+        <h3>Read the next grammatical structure and then, answer the exercise <br> <br></h3>
+        <p>We often use the second conditional to talk about possible situations. <br>
+            If there was a comms outage, we would switch to the backup service. <br>
+            If we lost power, our own back up power systems would start. <br>
+            We can also use other structures to talk about imaginary situations. <br>
+            In the event of one of your servers going down… <br>
+            Supposing there was an earthquake, or you got hit by a plane, what would happen them? <br>
+            Should anything terrible occur, you would need to have standby communications links.<br>
+            If that were to happen, you would switch over to the hot standby site. 
+            </p> <br>
+
+            <img src="img/unit52.png" alt=""> 
+
+          <h3><br> 1. Which answer corresponds to number 4?</h3>
+          <label>
+              <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">We would use the other network POP
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">The temperature alarm would go off
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">we would use the other power feed from the grid
+          </label>
+      </section>
+
+      <section id="p1">
+          <h3>2. Which answer corresponds to number 2?</h3>
+          <label>
+              <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">We would switch to the mirror site in Switzerland.
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">The UPS system would kick in or we would use our own generators.
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">We would use the other power feed from the grid.
+          </label>
+      </section>
+
+      <section id="p2">
+        <h3>3.  Which answer corresponds to number 7?</h3>
+        <label>
+            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">We would use the other network POP
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">The temperature alarm would go off.
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">We would switch to the mirror site in Switzerland.
+        </label>
+    </section>
+
+    <section id="p3">
+      <h3>4. Which answer corresponds to number 1? </h3>
+      <label>
+          <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> We would use the other power feed from the grid.
+      </label>
+
+      <label>
+          <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">The temperature alarm would go off
+      </label>
+
+      <label>
+          <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> The UPS system would kick in or we would use our own generators.
+      </label>
+  </section>
+
+  <section id="p4">
+    <h3>5. Which answer corresponds to number 3? </h3>
+    <label>
+        <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">We would isolate it and change it straight away.
+    </label>
+
+    <label>
+        <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">They would be stopped by other network POP.
+    </label>
+
+    <label>
+        <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">We would use the other power feed from the grid.
+    </label>
+</section>
+
+      <button onclick="corregir()">Score</button>
+      <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+      
+          <button onclick="location.href='Unit5reading.html'">Next</button>
+        
+
+  </div>
+  <script src="script.js"> </script>
+</body>
+</html>

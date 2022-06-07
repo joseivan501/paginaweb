@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+
+  <div class="container">
+    <section id="p0">
+      <h1 class="heading">Practices</h1>
+      <h3>Complete the notes on some of these changes and the table with the pairs of expressions.</h3> 
+        <p>
+            CTR = Cathode Ray Tube <br>
+•	The light source inside older TV sets
+DRM = Digital Rights Management<br>
+•	Similar to copyright for electronic content
+EPG = Electronic Programme Guide<br>
+•	An electronic list of programmes available on TV, cable, satellite, or the Internet
+IPTV = Internet Protocol Television<br>
+•	Digital TV over a network
+LCD = Liquid Crystal Display<br>
+•	The technology used in flat screen TVs and monitors
+MPEG = Moving Picture Experts Group <br>
+•	A file format for audio and video
+VOD = Video On Demand<br>
+•	Playback of video at request of user
+
+        </p>
+
+        <img src="img/Unit71.png" alt=""> 
+        <h3> <br>Select the correct order</h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	antenna / broad band
+            <br> 2.	CRT / LCD
+            <br> 3.	broadcast to call / downland on demand
+            <br> 4.	TV license or advertising / pay per view
+            <br> 5.	all scheduled / time shifted   
+            
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	antenna / broad band
+            <br> 2.	CRT / LCD
+            <br> 3.	broadcast to call / downland on demand
+            <br> 4.	all scheduled / time shifted
+            <br> 5.	TV license or advertising / pay per view
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	CRT / LCD
+            <br> 2.	antenna / broad band 
+            <br> 3.	broadcast to call / downland on demand
+            <br> 4.	all scheduled / time shifted
+            <br> 5.	TV license or advertising / pay per view 
+        </label>
+    </section>
+
+    <button onclick="corregir()">Score</button>
+    <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+    
+        <button onclick="location.href='Unit8.html'">Next</button>
+      
+
+</div>
+<script src="script.js"> </script>
+</body>
+</html>

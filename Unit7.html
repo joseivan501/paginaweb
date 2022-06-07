@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+
+  <div class="container">
+    <section id="p0">
+      <h1 class="heading">Practices <br>Unit 7</h1>
+      <h3>Listen to the track21 and complete the notes about the company and its business model.<br>Remember you can download the track in Resources' section</h3> 
+        <p>AdventureUS are a venture capital company that specialize in funding international technology start-ups. You are going to hear three companies pitch for investment.</p>
+
+        <img src="img/Unit7.png" alt=""> 
+        <h3> <br>Select the correct order</h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">
+           <br> 1.	Lamppost.com
+           <br> 2.	social networking for dogs and their owners
+           <br> 3.	registration fee
+           <br> 4.	e-commerce section
+           <br> 5.	advertising
+           <br> 6.	mailing list
+           <br> 7.	2m
+           <br> 8.	15m
+           <br> 9.	have built prototype and have had discussions with hosting company
+            
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	Lamppost.com
+            <br> 2.	social networking for dogs and their owners
+            <br> 3.	registration fee
+            <br> 4.	e-commerce section
+            <br> 5.	advertising
+            <br> 6.	mailing list
+            <br> 7.	15m
+            <br> 8.	2m
+            <br> 9.	have built prototype and have had discussions with hosting company
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	Lamppost.com
+            <br> 2.	social networking for dogs and their owners
+            <br> 3.	registration fee
+            <br> 4.	mailing list
+            <br> 5.	advertising
+            <br> 6.	e-commerce section
+            <br> 7.	2m
+            <br> 8.	15m
+            <br> 9.	have built prototype and have had discussions with hosting company
+        </label>
+    </section>
+
+    <button onclick="corregir()">Score</button>
+    <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+    
+        <button onclick="location.href='Unit71.html'">Next</button>
+      
+
+</div>
+<script src="script.js"> </script>
+</body>
+</html>

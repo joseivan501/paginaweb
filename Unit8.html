@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+
+  <div class="container">
+    <section id="p0">
+      <h1 class="heading">Practices <br>Unit 8</h1>
+      <h3>Listen to the track25 and complete the notes about the company and its business model.<br>Remember you can download the track in Resources' section</h3> 
+
+        <img src="img/Unit8.png" alt=""> 
+        <h3> <br>Select the correct order</h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">
+           <br> 1.	b
+           <br> 2.	e
+           <br> 3.	a
+           <br> 4.	c
+           <br> 5.	d
+            
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	c
+            <br> 2.	a
+            <br> 3.	e
+            <br> 4.	b
+            <br> 5.	d
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">
+            <br> 1.	a
+            <br> 2.	b
+            <br> 3.	c
+            <br> 4.	d
+            <br> 5.	e
+        </label>
+    </section>
+
+    <button onclick="corregir()">Score</button>
+    <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+    
+        <button onclick="location.href='index.html'">Finish</button>
+      
+
+</div>
+<script src="script.js"> </script>
+</body>
+</html>

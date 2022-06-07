@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+
+  <div class="container">
+    <section id="p0">
+      <h1 class="heading">Practices</h1>
+      <h3>An agent from Thai Management is talking about the service the company can provide. Complete the sentences with the words and phrases from the box.</h3><br>
+      <p>1.	We offer a ____ service, which means that we try to predict and prevent faults rather than react to them. <br>
+        2.	If we can’t ____ a fault immediately, we will replace the equipment.<br>
+        3.	Under our ____ scheme, we purchase all the equipment you are currently using and then upgrade it as necessary.<br>
+        4.	We will run a ____ on your equipment regularly to check that everything is working properly.<br>
+        5.	You can have a ____ manager who will be personally responsible for looking after your business.<br>
+        6.	We offer a very fast ____ to any faults that you report to us.<br>
+        7.	We will ____ your network and equipment 24/7 to ensure that everything runs smoothly.<br>
+        8.	We offer a range of different ____ level agreements.<br>
+        </p>
+
+        <h3> <br>1</h3>
+        <label>
+            <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Proactive
+            
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">Ping test
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Service
+        </label>
+    </section>
+
+    <section id="p1">
+        <h3>2</h3>
+        <label>
+            <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Ping test
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">Fix
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Service
+        </label>
+    </section>
+
+    <section id="p2">
+      <h3>3</h3>
+      <label>
+          <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Fix
+      </label>
+
+      <label>
+          <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Response
+      </label>
+
+      <label>
+          <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Buyback
+      </label>
+  </section>
+
+  <section id="p3">
+    <h3>4 </h3>
+    <label>
+        <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Ping test
+    </label>
+
+    <label>
+        <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Fix
+    </label>
+
+    <label>
+        <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Proactive
+    </label>
+</section>
+
+<section id="p4">
+  <h3>5 </h3>
+  <label>
+      <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Monitor
+  </label>
+
+  <label>
+      <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Dedicated
+  </label>
+
+  <label>
+      <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Proactive
+  </label>
+</section>
+
+<section id="p5">
+<h3>6 </h3>
+<label>
+    <input type="radio" value="1" name="p5" onclick="respuesta(5,this)">Dedicated
+</label>
+
+<label>
+    <input type="radio" value="2" name="p5" onclick="respuesta(5,this)">Monitor
+</label>
+
+<label>
+    <input type="radio" value="3" name="p5" onclick="respuesta(5,this)">Response
+</label>
+</section>
+
+<section id="p6">
+<h3>7 </h3>
+<label>
+    <input type="radio" value="1" name="p6" onclick="respuesta(6,this)">Monitor
+</label>
+
+<label>
+    <input type="radio" value="2" name="p6" onclick="respuesta(6,this)">Response
+</label>
+
+<label>
+    <input type="radio" value="3" name="p6" onclick="respuesta(6,this)">Fix
+</label>
+</section>
+
+<section id="p7">
+<h3>8 </h3>
+<label>
+    <input type="radio" value="1" name="p7" onclick="respuesta(7,this)">Dedicated
+</label>
+
+<label>
+    <input type="radio" value="2" name="p7" onclick="respuesta(7,this)">Buyback
+</label>
+
+<label>
+    <input type="radio" value="3" name="p7" onclick="respuesta(7,this)">Service
+</label>
+</section>
+
+    <button onclick="corregir()">Score</button>
+    <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+    
+        <button onclick="location.href='Unit7.html'">Next</button>
+      
+
+</div>
+<script src="script.js"> </script>
+</body>
+</html>

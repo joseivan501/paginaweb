@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+  
+
+  <div class="container">
+    <section id="p0">
+      <h1 class="heading">Practices</h1>
+      <h3>Read this short article about a computer infection and complete the text. <br> <br></h3>
+      <p>Conficker has been in the news a lot recently. It is a (1)______, which unlike a virus does not need to be attached to an existing program to infect a machine, and which seems to receive regularly updated instructions from its controllers. It has created a (2)______ a network of infected machines. Once infected, these machines are known as (3)_______. At this point no one knows what the purpose of Conficker is. At present it has infected ten million computers. These could be used for a (4)________ attack where all the infected computers attempt to access one site simultaneously.
+        It is probably controlled by criminals who want to steal users’ personal information, i.e. (5)_____. There are a number of ways of doing this: a (6)______ records information entered via a keyboard, (7)______ literally means harvesting users’ information while they are online. We will probably soon see if Conficker consists of this type of passive monitoring (8) ______ or whether it will mount a more active attack once it receives a new set of instructions.        
+          </p> <br>
+
+          <h3><br> 1</h3>
+          <label>
+              <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">Worm
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">BotNet
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Denial of service
+          </label>
+      </section>
+
+      <section id="p1">
+          <h3>2</h3>
+          <label>
+              <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">Keylogger
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">BotNet
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Spyware
+          </label>
+      </section>
+
+      <section id="p2">
+        <h3>3</h3>
+        <label>
+            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">BotNet
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Worm
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Zombies
+        </label>
+    </section>
+
+    <section id="p3">
+      <h3>4 </h3>
+      <label>
+          <input type="radio" value="1" name="p3" onclick="respuesta(3,this)"> Denial of service
+      </label>
+
+      <label>
+          <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Keylogger
+      </label>
+
+      <label>
+          <input type="radio" value="3" name="p3" onclick="respuesta(3,this)"> Spyware
+      </label>
+  </section>
+
+  <section id="p4">
+    <h3>5 </h3>
+    <label>
+        <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">Worm
+    </label>
+
+    <label>
+        <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Identify theft
+    </label>
+
+    <label>
+        <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Pharming
+    </label>
+</section>
+
+<section id="p5">
+  <h3>6 </h3>
+  <label>
+      <input type="radio" value="1" name="p5" onclick="respuesta(5,this)">BotNet
+  </label>
+
+  <label>
+      <input type="radio" value="2" name="p5" onclick="respuesta(5,this)">Worm
+  </label>
+
+  <label>
+      <input type="radio" value="3" name="p5" onclick="respuesta(5,this)">Keylogger
+  </label>
+</section>
+
+<section id="p6">
+  <h3>7 </h3>
+  <label>
+      <input type="radio" value="1" name="p6" onclick="respuesta(6,this)">Pharming
+  </label>
+
+  <label>
+      <input type="radio" value="2" name="p6" onclick="respuesta(6,this)">Identify theft
+  </label>
+
+  <label>
+      <input type="radio" value="3" name="p6" onclick="respuesta(6,this)">Keylogger
+  </label>
+</section>
+
+<section id="p7">
+  <h3>8 </h3>
+  <label>
+      <input type="radio" value="1" name="p7" onclick="respuesta(7,this)">Worm
+  </label>
+
+  <label>
+      <input type="radio" value="2" name="p7" onclick="respuesta(7,this)">Identify theft
+  </label>
+
+  <label>
+      <input type="radio" value="3" name="p7" onclick="respuesta(7,this)">Spyware
+  </label>
+</section>
+
+      <button onclick="corregir()">Score</button>
+      <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+      
+          <button onclick="location.href='Unit6.html'">Next</button>
+        
+
+  </div>
+  <script src="script.js"> </script>
+</body>
+</html>

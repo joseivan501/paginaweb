@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+  
+
+  <div class="container">
+      <section id="p0">
+        <h1 class="heading">Practices <br>Unit 6</h1>
+        <h3>Listen to the track20. Select correct answers <br>Remember you can download the track in Resources' section</h3>
+        <img src="img/Unit6.png" alt=""> 
+
+          <h3> <br>1… the SLA we are looking for is … </h3>
+          <label>
+              <input type="radio" value="1" name="p0" onclick="respuesta(0,this)">4-hour response
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p0" onclick="respuesta(0,this)">24/7
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p0" onclick="respuesta(0,this)">Network Only
+          </label>
+      </section>
+
+      <section id="p1">
+          <h3>2. We can manage that </h3>
+          <label>
+              <input type="radio" value="1" name="p1" onclick="respuesta(1,this)">4-hour response
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p1" onclick="respuesta(1,this)">24/7
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p1" onclick="respuesta(1,this)">Network Only
+          </label>
+      </section>
+
+      <section id="p2">
+        <h3>3. The only thing is …</h3>
+        <label>
+            <input type="radio" value="1" name="p2" onclick="respuesta(2,this)">Shared
+        </label>
+
+        <label>
+            <input type="radio" value="2" name="p2" onclick="respuesta(2,this)">Real Time Online
+        </label>
+
+        <label>
+            <input type="radio" value="3" name="p2" onclick="respuesta(2,this)">Shared Team Business Hours
+        </label>
+    </section>
+
+    <section id="p3">
+      <h3>4. How do you suggest we deal with that?</h3>
+      <label>
+          <input type="radio" value="1" name="p3" onclick="respuesta(3,this)">Network Only
+      </label>
+
+      <label>
+          <input type="radio" value="2" name="p3" onclick="respuesta(3,this)">Real Time Online
+      </label>
+
+      <label>
+          <input type="radio" value="3" name="p3" onclick="respuesta(3,this)">Shared Team Business Hours
+      </label>
+  </section>
+
+  <section id="p4">
+    <h3>5. I’ll have to think about that</h3>
+    <label>
+        <input type="radio" value="1" name="p4" onclick="respuesta(4,this)">24/7
+    </label>
+
+    <label>
+        <input type="radio" value="2" name="p4" onclick="respuesta(4,this)">Real Time Online
+    </label>
+
+    <label>
+        <input type="radio" value="3" name="p4" onclick="respuesta(4,this)">Shared
+    </label>
+</section>
+
+      <button onclick="corregir()">Score</button>
+      <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+      
+          <button onclick="location.href='Unit61.html'">Next</button>
+        
+
+  </div>
+  <script src="script.js"> </script>
+</body>
+</html>

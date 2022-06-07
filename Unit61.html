@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English book</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  
+  <header>
+    <a href="#" class="logo">
+      <span>ENGLISH</span> book</a>
+
+      <input type="checkbox" id="menu-bar">
+      <label for="menu-bar" class="fa fa-bars"></label>
+
+      <nav class="navbar">
+        <a href="index.html#Home">Home</a>
+        <a href="index.html#Skills">Skills</a>
+        <a href="ejercicios.html">Practices</a>
+        <a href="https://drive.google.com/drive/folders/1Mmyxp5XkDC7rgxUAp8r07guN1B9zulSK">Resources</a>
+      </nav>
+  </header>
+
+  
+
+  <div class="container">
+      <section id="p0">
+        <h1 class="heading">Practices</h1>
+        <h3>A customer is talking to an MSP. Put the following dialogue into the correct order. The first one has been done for you. </h3><br>
+        <img src="img/Unit61.png" alt=""> 
+
+          <h3> <br>What is the correct order? </h3>
+          <label>
+              <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"><br>1.e <br> 2.a<br> 3.f<br> 4.i<br> 5.h<br> 6.g<br> 7.c<br> 8.b<br> 9.d
+              
+          </label>
+
+          <label>
+              <input type="radio" value="2" name="p0" onclick="respuesta(0,this)"><br>1.e <br> 2.a<br> 3.f<br> 4.i<br> 5.c<br> 6.g<br> 7.h<br> 8.b<br> 9.d
+          </label>
+
+          <label>
+              <input type="radio" value="3" name="p0" onclick="respuesta(0,this)"><br>1.e <br> 2.f<br> 3.a<br> 4.i<br> 5.h<br> 6.g<br> 7.c<br> 8.b<br> 9.d
+          </label>
+      </section>
+
+      <button onclick="corregir()">Score</button>
+      <h2>Right answers: <span id="resultado"></span></h2> <br> <br>
+
+      
+          <button onclick="location.href='Unit6voca.html'">Next</button>
+        
+
+  </div>
+  <script src="script.js"> </script>
+</body>
+</html>
